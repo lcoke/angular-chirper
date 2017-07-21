@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="app/styles.css">
     <title>Document</title>
 </head>
-<body ng-controller="postController">
+<body ng-controller="chirpReq">
     <form ng-submit="clicker">
     User: <input type="text" name="User" ng-model='new.chirp.user' required> 
     Message: <input type="text" name="Message" ng-model='new.chirp.message'required><br>
     <input type='submit'>
     </form>
     <h1 id="h1list">CHIRP</h1> 
-     <div ng-controller="getController" >
-         <div ng-repeat='chirps in allChirps'>   
+     <div ng-controller="" >
+         <div ng-repeat='chirps in chirpList'>   
    
     <p>USER: {{chirps.user}}</p>
      <p>MESSAGE: {{chirps.message}} </p>
