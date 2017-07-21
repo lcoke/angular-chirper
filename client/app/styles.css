@@ -3,6 +3,11 @@ body{
     background-image: url(https://tctechcrunch2011.files.wordpress.com/2015/08/clouds.jpg);
     background-size: cover  
 }
+
+body {
+    text-align: center;
+}
+
 h3{
     display: inline;
     
@@ -15,7 +20,8 @@ h1.list{
 }
 button{
     display:block;
-    clear:right
+    clear:right;
+    
 }
 img{
     border-left: 1px solid yellow
