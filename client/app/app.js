@@ -10,6 +10,9 @@ myApp.config(function ($routeProvider, $locationProvider) {
         .when("/single/:id", {
             templateUrl: "views/single.html"
         })
+        .when("/user/:user", {
+            templateUrl: "views/users.html"
+        })
 
 });
 myApp.controller('allGetController', function ($scope, $http, $location, $routeParams) {
@@ -72,4 +75,12 @@ myApp.controller('oneController', function ($scope, $routeParams, $http) {
         })
 });
    
-    
+    /* Set the width of the side navigation to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
